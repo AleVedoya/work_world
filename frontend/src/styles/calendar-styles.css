@@ -1,0 +1,13 @@
+.custom-day {
+    /* Estilos personalizados para todas las fechas */
+
+  }
+  
+  .custom-day.blocked {
+    /* Estilos personalizados para las fechas bloqueadas */
+    background: #ccc;
+    color: blue;
+
+
+  }
+  

@@ -1,0 +1,310 @@
+.detalle-producto-detalle-producto-container {
+    width: 100vw;
+}
+
+.detalle-producto-title-container {
+    width: 100vw;
+    background-color: #383B58;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.detalle-producto-25);
+}
+
+.detalle-producto-title {
+    width: 100vw;
+    margin-left: 40px;
+    text-align: left;
+    color: white;
+    font-style: normal;
+    font-weight: 720;
+    font-size: 30px;
+    line-height: 28px;
+}
+
+.detalle-producto-info-container {
+    background: white;
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detalle-producto-description-container {
+    height: 80%;
+    width: 50%;
+    text-align: center;
+}
+
+.detalle-producto-description-text {
+    display: flex;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    font-weight: 550;
+    font-size: 23px;
+    text-align: left;
+    margin-left: 35px;
+    color: #383B58;
+}
+
+
+.detalle-producto-description {
+    display: flex;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    font-weight: 300;
+    font-size: 23px;
+    text-align: left;
+    margin-left: 35px;
+    padding-bottom: 12px;
+    color: #383B58;
+}
+
+
+.detalle-producto-info-stars-conatiner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px ;
+    width: 30%;
+    height: 100%;
+}
+
+.detalle-producto-info-stars{
+    background-color: #383B58;
+    color: #f4f1f1;
+    width: 10%;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 20%;
+}
+.detalle-producto-info-stars-text{
+    color: #383B58;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+
+.price-availability-container{
+    background: #f4f1f1;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.price-availability-container p{
+    margin-left: 45px;
+    color: #383B58;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100%;
+}
+
+.separator{
+    width: 94vw;
+    margin-left: 20px;
+    background-color: #545776;
+    border-radius: 5px;
+    height: 4px;
+}
+
+.adress-icon{
+    font-weight: bold;
+    color: #545776;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+/* Reservas Container */
+.reservarProducto-conatiner {
+    width: 100vw;
+    height: 6vh;
+    background: #f4f1f1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.detalle-producto-25);
+}
+
+.name-producto-title-container {
+    width: 100vw;
+    background-color: #f4f1f1;
+    color: #545776;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.detalle-producto-25);
+}
+
+.name-producto-title-container h1{
+    color: #545776;
+} 
+
+.reservarProducto-fechasDisponibles-container{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 22px;
+}
+.reservarProducto-fechasDisponibles-title{
+    color: #545776;
+    font-weight: bold;
+}
+.reservarProducto-fechas{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reservarProducto-fecha{
+    color: #545776;
+    padding: 0px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.reservarProducto-fecha b{
+    background-color: #545776;
+    color: white;
+    border: 3px solid #545776;
+    padding: 0px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+.reservarProducto-btn-container{
+    width: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: Center;
+}
+
+
+.reservar-btn {
+    display: inline-block;
+    padding: 0px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #545776;;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+
+.reservar-btn-cancelar {
+    display: inline-block;
+    padding: 0px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: red;;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.reservar-btn:hover {
+    transform: translateY(-2px);
+}
+
+.reservar-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.verProducto-btn{
+    /* display: inline-block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(52, 126, 236, 0.973);;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 300px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.ver-detalle-producto{
+    /* background-color: red; */
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Calendario Contenedor */
+
+.calendar-conatiner{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #545776;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Empty mensaje */
+
+.empty-message-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 200px;
+    background-color: #ff8080;
+    border: 2px solid #FF5722;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .empty-message-container p {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }

@@ -1,0 +1,50 @@
+.carac-container{
+    background-color:#f4f1f1;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+
+.carac-title{
+    color: #545776;
+    margin-left: 20px;
+    font-size: 23px;
+}
+
+.separator{
+    width: 94vw;
+    margin-left: 20px;
+    background-color: #545776;
+    border-radius: 5px;
+    height: 4px;
+}
+
+.carac-grid{
+    display: grid;
+    margin-left: 20px;
+    width: 80vw;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-template-rows: repeat(4, 1fr); /* Four rows with equal height */
+    gap: 20px 10px; /* Gap between grid items */
+}
+
+.carac-item{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.carac-item-title{
+    color: #545776;
+    text-transform: capitalize;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.carac-tem-logo{
+    font-size: 23px;
+    color: #1DBEB4;
+}

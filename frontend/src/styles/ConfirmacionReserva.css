@@ -1,0 +1,576 @@
+.reserveDetailContainer {
+  background-color: rgb(244, 241, 241);
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 80vh;
+  padding: 31px 15px 18px;
+  box-shadow: 0px 1px 5px rgb(0 0 0 / 15%);
+  border-radius: 5px;
+  margin: 15px auto;
+  /* max-width: 708px; */
+}
+p strong {
+  font-size: 20px;
+}
+.reserveDetailContainer h2 {
+  text-align: center;
+}
+
+.check-dates{
+  color: #545776;
+  font-weight: 700;
+  font-size: 20px;
+}
+.userDetails {
+  width: 95%;
+  height: fit-content;
+  margin: 10px 30px;
+}
+
+.dates-title{
+  color: #545776
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.cardDetailContainer {
+  display: flex;
+  /* flex-direction: column; */
+  height: fit-content;
+  width: 80%;
+  margin: 10px auto;
+  text-decoration: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  border: 1px solid #f3f1ed;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.imageDetailContainer {
+  /* background-color: #f3f1ed; */
+  width: 50%;
+  height: auto;
+  margin: 15px;
+  /* width: 311px; */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.cardDetail {
+  width: 50%;
+  height: fit-content;
+  padding-left: 8px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.categoryTitleContainer {
+  margin: 10px 0px;
+  width: 95%;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 60px;
+  text-align: left;
+}
+
+.fullAdress {
+  width: 95%;
+  height: fit-content;
+  margin: 20px;
+}
+
+.distance-info-p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.ver-mapa-text {
+  color: #1dbeb4;
+}
+
+.price {
+  width: 95%;
+  height: fit-content;
+  margin: 0px;
+}
+
+.selectedDates {
+  width: 95%;
+  height: fit-content;
+  margin: 10px;
+}
+
+.checkDate {
+  width: 100%;
+  height: fit-content;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 0px 1px 5px rgb(0 0 0 / 15%);
+  border-radius: 5px;
+}
+
+.confirmButton {
+  background: #1dbeb4;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  width: 296px;
+  height: 50px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin: 10px;
+  align-self: center;
+}
+
+.confirmButton:hover {
+  transform: translateY(-2px);
+}
+
+.confirmButton:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1023px) {
+  .reserveDetailContainer {
+    background-color: rgb(244, 241, 241);
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: fit-content;
+    padding: 31px 15px 18px;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    margin: 15px auto;
+    /* max-width: 708px; */
+  }
+
+  .reserveDetailContainer h2 {
+    text-align: center;
+  }
+
+  .userDetails {
+    width: 95%;
+    height: fit-content;
+    margin: 10px auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .cardDetailContainer {
+    display: flex;
+    /* flex-direction: column; */
+    height: fit-content;
+    width: 95%;
+    margin: 10px auto;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    border: 1px solid #f3f1ed;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .imageDetailContainer {
+    /* background-color: #f3f1ed; */
+    width: 50%;
+    height: auto;
+    margin: 15px;
+    /* width: 311px; */
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .cardDetail {
+    width: 50%;
+    height: fit-content;
+    padding-left: 8px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .categoryTitleContainer {
+    margin: 10px 0px;
+    width: 95%;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .fullAdress {
+    width: 95%;
+    height: fit-content;
+    margin: 20px;
+  }
+
+  .distance-info-p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .ver-mapa-text {
+    color: #1dbeb4;
+  }
+
+  .price {
+    width: 95%;
+    height: fit-content;
+    margin: 0px;
+  }
+
+  .selectedDates {
+    width: 95%;
+    height: fit-content;
+    margin: 10px;
+  }
+
+  .checkDate {
+    width: 100%;
+    height: fit-content;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+  }
+
+  .confirmButton {
+    background: #1dbeb4;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    width: 296px;
+    height: 50px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 10px;
+    align-self: center;
+  }
+}
+
+/* - una medida para tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para pantallas de tablet con un ancho mínimo de 768px y un ancho máximo de 1023px */
+  /* - una medida para telefono */
+  .reserveDetailContainer {
+    background-color: rgb(244, 241, 241);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 31px 15px 18px;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    margin: 15px auto;
+    max-width: 708px;
+  }
+
+  .reserveDetailContainer h2 {
+    text-align: center;
+  }
+
+  .userDetails {
+    width: 95%;
+    height: fit-content;
+    margin: 10px auto;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .cardDetailContainer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 95%;
+    margin: 10px auto;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    border: 1px solid #f3f1ed;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .imageDetailContainer {
+    /* background-color: #f3f1ed; */
+    width: 80%;
+    height: 290px;
+    margin: 15px;
+    /* width: 311px; */
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .cardDetail {
+    width: 80%;
+    height: fit-content;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .categoryTitleContainer {
+    margin: 10px 0px;
+    width: 95%;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .fullAdress {
+    width: 95%;
+    height: fit-content;
+    margin: 10px;
+  }
+
+  .distance-info-p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .ver-mapa-text {
+    color: #1dbeb4;
+  }
+
+  .price {
+    width: 95%;
+    height: fit-content;
+    margin: 10px;
+  }
+
+  .selectedDates {
+    width: 95%;
+    height: fit-content;
+    margin: 10px;
+  }
+
+  .checkDate {
+    width: 100%;
+    height: fit-content;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+  }
+
+  .confirmButton {
+    background: #1dbeb4;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    width: 296px;
+    height: 50px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 10px;
+    align-self: center;
+  }
+}
+@media (max-width: 767px) {
+  /* Estilos para pantallas de teléfono con un ancho máximo de 767px */
+  .reserveDetailContainer {
+    background-color: rgb(244, 241, 241);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    padding: 31px 15px 18px;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+    margin: 15px auto;
+    max-width: 708px;
+  }
+
+  .reserveDetailContainer h2 {
+    text-align: center;
+  }
+
+  .userDetails {
+    width: 95%;
+    height: fit-content;
+    margin: 10px 30px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .cardDetailContainer {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 95%;
+    margin: 10px auto;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    border: 1px solid #f3f1ed;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .imageDetailContainer {
+    /* background-color: #f3f1ed; */
+    width: 80%;
+    height: 290px;
+    margin: 15px;
+    /* width: 311px; */
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .cardDetail {
+    width: 80%;
+    height: fit-content;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .categoryTitleContainer {
+    margin: 10px 0px;
+    width: 95%;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .fullAdress {
+    width: 95%;
+    height: fit-content;
+    margin: 10px;
+  }
+
+  .distance-info-p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .ver-mapa-text {
+    color: #1dbeb4;
+  }
+
+  .price {
+    width: 95%;
+    height: fit-content;
+    margin: 10px;
+  }
+
+  .selectedDates {
+    width: 95%;
+    height: fit-content;
+    margin: 10px;
+  }
+
+  .checkDate {
+    width: 100%;
+    height: fit-content;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 15%);
+    border-radius: 5px;
+  }
+
+  .confirmButton {
+    background: #1dbeb4;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    width: 296px;
+    height: 50px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    margin: 10px;
+    align-self: center;
+  }
+}

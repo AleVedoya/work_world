@@ -1,0 +1,14 @@
+.divImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:5%
+}
+
+.titleImgs{
+    margin-left: 2.5%;
+    font-size: 20px;
+    color: green;
+}

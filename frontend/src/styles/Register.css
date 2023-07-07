@@ -1,0 +1,273 @@
+.login {
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  height: 100vh;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-title {
+  padding: 30px 10px 0 10px;
+  color: #383b58;
+  font-size: 1.8em;
+}
+
+.login-inputs-container {
+  /* background-color: yellow; */
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input-label {
+  text-align: left;
+  color: #383b58;
+  font-size: 18px;
+  font-weight: 600;
+  width: 80%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  /* background-color: red; */
+}
+
+.input-label input {
+  width: 100%;
+  height: 40px;
+  font-size: 0.8rem;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add light shadow */
+  background: #f4f1f1;
+  padding: 10px 20px;
+  transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+.btn-form-container {
+  width: 90%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-CrearCuenta {
+  width: 40%;
+  height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #1dbeb4;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-CrearCuenta:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.error-msg-already-register {
+  text-align: center;
+  border-radius: 5px;
+  width: 80%;
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.2);
+  list-style: none;
+}
+
+.errorMsg-list {
+  list-style: none;
+  text-align: center;
+  border-radius: 5px;
+  width: 50%;
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.error-Msg {
+  color: red;
+  font-size: 15x;
+  margin-top: 5px;
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+  /* Estilos para pantallas de laptop con un ancho mínimo de 1024px */
+
+  .login {
+    width: 50%;
+  }
+
+  .login-inputs-container {
+    /* background-color: yellow; */
+    width: 100%;
+  }
+
+  .input-label {
+    width: 85%;
+  }
+
+  .btn-form-container {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-CrearCuenta {
+    width: 30%;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .error-msg-already-register {
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+    list-style: none;
+  }
+
+  .errorMsg-list {
+    list-style: none;
+    text-align: center;
+    border-radius: 5px;
+    width: 50%;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+
+  .error-Msg {
+    color: red;
+    font-size: 15x;
+    margin-top: 5px;
+  }
+}
+
+/* - una medida para tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Estilos para pantallas de tablet con un ancho mínimo de 768px y un ancho máximo de 1023px */
+  /* - una medida para telefono */
+
+  .login {
+    width: 50%;
+  }
+
+  .login-inputs-container {
+    /* background-color: yellow; */
+    width: 100%;
+  }
+
+  .input-label {
+    width: 85%;
+  }
+
+  .btn-form-container {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-CrearCuenta {
+    width: 30%;
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .error-msg-already-register {
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+    list-style: none;
+  }
+
+  .errorMsg-list {
+    list-style: none;
+    text-align: center;
+    border-radius: 5px;
+    width: 50%;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+
+  .error-Msg {
+    color: red;
+    font-size: 15x;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 767px) {
+  /* Estilos para pantallas de teléfono con un ancho máximo de 767px */
+
+  .login {
+    width: 80%;
+  }
+
+  .login-inputs-container {
+    /* background-color: yellow; */
+    width: 100%;
+  }
+
+  .input-label {
+    width: 85%;
+  }
+
+  .btn-form-container {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-CrearCuenta {
+    height: 35px;
+    font-size: 16px;
+  }
+
+  .error-msg-already-register {
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+    list-style: none;
+  }
+
+  .errorMsg-list {
+    list-style: none;
+    text-align: center;
+    border-radius: 5px;
+    width: 50%;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.2);
+  }
+
+  .error-Msg {
+    color: red;
+    font-size: 15x;
+    margin-top: 5px;
+  }
+}

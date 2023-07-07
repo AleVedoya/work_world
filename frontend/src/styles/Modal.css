@@ -1,0 +1,39 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #383B58;
+    opacity: 0.95;
+    /* Semi-transparent background */
+    backdrop-filter: blur(4px);
+    /* Apply blur effect to the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* Make the modal appear on top of everything */
+}
+
+.modal-content {
+    background-color: #fff;
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 35px;
+    cursor: pointer;
+}

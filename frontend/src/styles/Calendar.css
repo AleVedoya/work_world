@@ -1,0 +1,42 @@
+input.inputBox {
+    font-size: 16px;
+    background-color: white;
+    padding: 5px 8px 4px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #7F7F7F;
+  }
+
+  .calendarWrap {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .calendarElement {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+    border: 1px solid #ccc;
+    z-index: 999;
+  }
+
+  .rdrDefinedRangesWrapper {
+    display: none;
+}
+
+/* 
+@media (min-width: 767px) {
+  .calendarWrap{
+    width: 45%;
+  }
+
+  .calendarElement{
+    width: 40%;
+  }
+
+  input.inputBox{
+    width: 95%;
+  }
+} */

@@ -1,0 +1,59 @@
+.product-listContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    min-height: 90vh;
+    background: #f4f1f1;
+}
+
+.card-link{
+    text-decoration: none;
+}
+.productList-header {
+    display: flex;
+    text-align: center;
+    background-color: #383B58;
+    padding: 25px 0px;
+    width: 100vw;
+
+}
+
+.productList-title {
+    width: 50%;
+    height: auto;
+    color: white;
+    font-style: normal;
+    font-weight: 720;
+    font-size: 30px;
+    line-height: 28px;
+} 
+
+.productList-list{
+    /* background-color: blue; */
+    margin-top: 20px;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productList-list-cntr{
+    display: flex;
+    /* background-color: red; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px 40px;
+    justify-content: flex-start;
+    width: 70vw;
+    margin-bottom: 15px;
+}
+
+.reservasList-list-cntr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px 40px;
+    justify-content: flex-start;
+    width: 80vw;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,95 @@
+.reserva-exitosa-container {
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.modal {
+    background-color: #FBFCFC;
+    padding: 2rem 3rem;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 250px;
+    border: 3px dotted #1DBEB4;
+    padding: 10px 20px;
+    z-index: 999;
+}
+
+.FaRegWindowClose {
+    text-align: right;
+}
+
+.button-close {
+    border-style: none;
+}
+
+.objeto-1 {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -10%);
+}
+
+.objeto-2 {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.message-container {
+    text-align: center;
+}
+
+.message {
+    font-size: 18px;
+    color: #1DBEB4;
+    margin-top: 60px;
+    font-size: 25px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    font-size: 50pz;
+}
+
+
+/* .ok-button {
+    padding: 10px 20px;
+    color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 768px) and (max-width: 1023px) {}
+
+@media (max-width: 767px) {}
+
+
+/* @media screen and (min-width: 40em) {
+    .modal {
+        left: 18%
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .modal {
+        left: 32%
+    }
+} */

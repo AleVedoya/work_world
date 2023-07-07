@@ -1,0 +1,44 @@
+.img-slider-container {
+    width: 80vw;
+    height: 10vh;
+    height: auto;
+    padding: 10px 0px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    background-color: red;
+    justify-content: space-around
+}
+  
+.btns-container {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  
+  .btn {
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+    background-color: #1DBEB4;
+    color: #FFF;
+    transition: background-color 0.5s;
+  }
+  
+  .btn:active {
+    background-color: #999;
+  }
+  
+
+  .contenedor-card{    
+    width: 30%;
+  }
