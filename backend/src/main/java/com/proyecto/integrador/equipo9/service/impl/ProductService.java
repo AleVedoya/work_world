@@ -1,9 +1,9 @@
 package com.proyecto.integrador.equipo9.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.proyecto.integrador.equipo9.awsConfig.ServiceS3;
 import com.proyecto.integrador.equipo9.dto.*;
 import com.proyecto.integrador.equipo9.handler.exception.ResourceNotFoundException;
+import com.proyecto.integrador.equipo9.imageConfig.CloudinaryService;
 import com.proyecto.integrador.equipo9.model.*;
 import com.proyecto.integrador.equipo9.repository.*;
 import com.proyecto.integrador.equipo9.service.IProductService;
@@ -27,14 +27,14 @@ public class ProductService implements IProductService {
 
     private final ProductRepository productRepository;
     private final ReservationRepository reservationRepository;
-    private final ServiceS3 serviceS3;
+    private final CloudinaryService cloudinaryService;
     private final ObjectMapper mapper;
     private static final Logger LOGGER = getLogger(ProductService.class);
     private final ImageRepository imageRepository;
     private final CategoryRepository categoryRepository;
     private final CityRepository cityRepository;
 
-    public ProductDto createProduct(ProductDto productDto, List<MultipartFile> files) throws ResourceNotFoundException, IOException {
+    public ProductDto createProduct(ProductDto productDto, List<MultipartFile> files) throws ResourceNotFoundException {
         Product product = mapper.convertValue(productDto, Product.class);
         product.setCity(mapper.convertValue(productDto.getCityDto(), City.class));
         product.setCategory(mapper.convertValue(productDto.getCategoryDto(), Category.class));
@@ -46,7 +46,13 @@ public class ProductService implements IProductService {
 
         // Obtener la URL de cada archivo y crear los ImageDto correspondientes
         for (MultipartFile file : files) {
-            String fileUrl = serviceS3.uploadFile(file);
+            String fileUrl;
+            try {
+                // Subir la imagen a Cloudinary y obtener la URL
+                fileUrl = cloudinaryService.uploadImage(file);
+            } catch (IOException e) {
+                throw new RuntimeException("Error uploading image to Cloudinary: " + e.getMessage());
+            }
 
             ImageDto imageDto = new ImageDto();
             imageDto.setUrlImage(fileUrl);

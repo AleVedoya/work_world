@@ -1,9 +1,9 @@
 package com.proyecto.integrador.equipo9.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.proyecto.integrador.equipo9.awsConfig.ServiceS3;
 import com.proyecto.integrador.equipo9.dto.ImageDto;
 import com.proyecto.integrador.equipo9.handler.exception.ResourceNotFoundException;
+import com.proyecto.integrador.equipo9.imageConfig.CloudinaryService;
 import com.proyecto.integrador.equipo9.model.Image;
 import com.proyecto.integrador.equipo9.repository.ImageRepository;
 import com.proyecto.integrador.equipo9.service.IImageService;
@@ -20,16 +20,18 @@ import java.util.stream.Collectors;
 public class ImageService implements IImageService {
 
     private final ImageRepository imageRepository;
-    private final ServiceS3 aws3Service;
+    private final CloudinaryService cloudinaryService;
     private final ObjectMapper mapper;
 
     public ImageDto createImage(MultipartFile imageFile) {
         String urlImage;
         try {
-            urlImage = aws3Service.uploadFile(imageFile);
+            // Utilizamos el servicio CloudinaryService para subir el archivo
+            urlImage = cloudinaryService.uploadImage(imageFile);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
         Image imageEntity = new Image();
         imageEntity.setUrlImage(urlImage);
         return mapper.convertValue(imageRepository.save(imageEntity), ImageDto.class);
