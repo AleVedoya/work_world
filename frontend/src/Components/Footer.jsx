@@ -16,7 +16,7 @@ const SocialNavList = () => {
 const CopyRight = () => {
     return (
         <div className='footer-copyright'>
-            <p>@2021 Digital House</p>
+            <p>@2023 Ale Vedoya</p>
         </div>
     );
 };

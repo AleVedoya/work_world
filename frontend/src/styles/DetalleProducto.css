@@ -1,9 +1,9 @@
 .detalle-producto-detalle-producto-container {
-    width: 100vw;
+    width: 100%;
 }
 
 .detalle-producto-title-container {
-    width: 100vw;
+    width: 100%;
     background-color: #383B58;
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@
 }
 
 .detalle-producto-title {
-    width: 100vw;
+    width: 100%;
     margin-left: 40px;
     text-align: left;
     color: white;
@@ -25,8 +25,8 @@
 
 .detalle-producto-info-container {
     background: white;
-    width: 100vw;
-    height: 6vh;
+    width: 100%;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -124,8 +124,8 @@
 
 /* Reservas Container */
 .reservarProducto-conatiner {
-    width: 100vw;
-    height: 6vh;
+    width: 100%;
+    height: 15vh;
     background: #f4f1f1;
     display: flex;
     flex-direction: row;
@@ -136,7 +136,7 @@
 }
 
 .name-producto-title-container {
-    width: 100vw;
+    width: 100%;
     background-color: #f4f1f1;
     color: #545776;
     display: flex;
@@ -160,6 +160,8 @@
 .reservarProducto-fechasDisponibles-title{
     color: #545776;
     font-weight: bold;
+    width: 100%;
+    
 }
 .reservarProducto-fechas{
     width: 60%;

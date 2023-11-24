@@ -4,7 +4,7 @@
     height: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:flex-start;
 }
 
@@ -27,8 +27,8 @@
     margin-left: 20px;
     width: 80vw;
     grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-    grid-template-rows: repeat(4, 1fr); /* Four rows with equal height */
-    gap: 20px 10px; /* Gap between grid items */
+    grid-template-rows: repeat(3, 1fr); /* Four rows with equal height */
+     /* Gap between grid items */
 }
 
 .carac-item{

@@ -16,21 +16,20 @@
   background-color: #545776;
   color: #fff;
   width: 100vw;
-  height: 16vh;
+  height: 20vh;
   margin: 0;
 }
 
 .main-container h2 {
   width: 85vw;
-
-  font-size: 35px;
+  font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 10px;
 }
 
 .form-buscador {
-  width: 85vw;
+  width: 80vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +47,7 @@
 
 .section-inputs input {
   width: 422px;
-  height: 40px;
+  height: 2rem;
   background-color: #f3f3f4;
   border: none;
   padding: 15px 20px;
@@ -62,7 +61,7 @@
   background-color: #1DBEB4;
   font-size: 16px;
   width: 20%;
-  height: 40px;
+  height: 2rem;
   font-weight: bold;
   color: #fff;
   border: none;
@@ -79,6 +78,80 @@
 
 @media (min-width: 1024px) {
   /* Estilos para pantallas de laptop con un ancho mínimo de 1024px */
+  #root {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #545776;
+    color: #fff;
+    width: 100vw;
+    height: 30vh;
+    margin: 0;
+  }
+  
+  .main-container h2 {
+    width: 85vw;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .form-buscador {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .section-inputs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: 80vw;
+    margin: auto;
+  }
+  
+  .section-inputs input {
+    width: 422px;
+    height: 2rem;
+    background-color: #f3f3f4;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16pt;
+    margin: 10px;
+  }
+  
+  .submit-btn {
+    background-color: #1DBEB4;
+    font-size: 16px;
+    width: 20%;
+    height: 2rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: auto 55px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .data-input {
+    color: #7F7F7F;
+  }
+  
 }
 
 /* - una medida para tablet  */
@@ -105,7 +178,7 @@
   
   .main-container h2 {
     width: 85vw;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 10px;
@@ -161,4 +234,71 @@
 /* - una medida para telefono */
 @media (max-width: 767px) {
   /* Estilos para pantallas de teléfono con un ancho máximo de 767px */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #545776;
+  color: #fff;
+  width: 100vw;
+  height: 20vh;
+  margin: 0;
+}
+
+.main-container h2 {
+  width: 85vw;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form-buscador {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.section-inputs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  width: 80vw;
+  margin: auto;
+}
+
+.section-inputs input {
+  width: 422px;
+  height: 2rem;
+  background-color: #f3f3f4;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16pt;
+  margin: 10px;
+}
+
+.submit-btn {
+  background-color: #1DBEB4;
+  font-size: 16px;
+  width: 20%;
+  height: 2rem;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: auto 55px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.data-input {
+  color: #7F7F7F;
+}
+
 }
